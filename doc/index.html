@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Spoli – Personal Portfolio & Resume HTML Template</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Spoli – Personal Portfolio & Resume HTML Template</span>
+	</header>
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li>
+							<a href="#settings" class="dt-navbar__link">Settings</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#include_set" class="dt-navbar__link dt-navbar__link_nested">Template Settings</a></li>
+								<li><a href="#include_fonts" class="dt-navbar__link dt-navbar__link_nested">Include Fonts</a></li>
+								<li><a href="#include_icons" class="dt-navbar__link dt-navbar__link_nested">Edit Icons</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+						</li>
+						<li>
+							<a href="#html_structure_header" class="dt-navbar__link">HTML structure of "Header"</a>
+						</li>
+						<li>
+							<a href="#html_structure_footer" class="dt-navbar__link">HTML structure of Footer</a>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#credits" class="dt-navbar__link">Credits</a></li>
+					</ul>
+				</div>
+			</nav>
+		</aside>
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<h2 class="dt-title">Spoli – Personal Portfolio & Resume HTML Template</h2>
+				<p>by: bslthemes</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:beshleyua@gmail.com">beshleyua@gmail.com</a></p>
+			</div>
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+html/
+│
+├──doc/
+├──template/
+│──│──css/
+│──│──scss/
+│──│──img/
+│──│──fonts/
+│──│──js/
+│──│──│──main.js
+│──│──|──plugins/
+│──│──index.html
+│──│──home-2.html
+│──│──home-3.html
+│──│──home-4.html
+│──│──project.html
+│──│──publication.html
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">css/</span> - compiled css styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">scss/</span> - main .scss styles for template
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">js/</span> - all JS library for template
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">main.js</span> - main JS for template</li>
+						</ul>
+					</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Template Settings</h2>
+				<p>For editing styling, colors, sizes, etc of the template you can use following settings, folder "/scss/_variables.scss (and dark)". You need to compile the .sсss files to "/css" folder. You can use the "Visual Studio Code" app -> "Live Sass Compiler".</p>
+				<pre class="code language-html">
+					<code>
+/* -------------------------------------------
+
+fonts
+
+------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$font-1: "Inter",
+sans-serif;
+$font-2: "Open Sans",
+sans-serif;
+
+/* -------------------------------------------
+
+colors
+
+------------------------------------------- */
+
+$m-1: #141414;
+$m-2: #8A8A8A;
+$m-3: #fff;
+
+$a-1: #FF8473;
+$a-2: #FFE588;
+$a-3: #7152E1;
+
+/* -------------------------------------------
+
+transition
+
+------------------------------------------- */
+
+$t-sm: .2s cubic-bezier(0, 0, 0.3642, 1);
+$t-md: .4s cubic-bezier(0, 0, 0.3642, 1);
+$t-lg: .6s cubic-bezier(0, 0, 0.3642, 1);
+$t-xl: .8s cubic-bezier(0, 0, 0.3642, 1);						
+					</code>
+				</pre>
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>For editing fonts of the template you can use following settings, folder "/scss/_variables.scss". You need to compile the .sсss files to "/css" folder. You can use the "Visual Studio Code" app -> "Live Sass Compiler".</p>
+				<pre class="code language-html">
+					<code>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+					</code>
+				</pre>
+				<p>
+					Next step is to replace "$font-1: 'Inter'," to your fonts names.
+				</p>
+			</article>
+			<article id="include_icons" class="dt-section">
+				<h2 class="dt-title">Edit Icons</h2>
+				<p>In this template are defined some of classes for icons, see all icons here - <a href="https://fontawesome.com/v5/search">https://fontawesome.com/v5/search</a>, use search and select icons.</p>
+				<p>Copy icon class (for example "fas fa-code") and add to tag in html file like this:</p>
+				<pre class="code language-html">
+					<code>
+&lt;i class="fas fa-pencil-ruler"&gt;&lt;/i&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+
+&lt;head&gt;
+
+	&lt;title&gt;Spoli – Personal Portfolio & Resume HTML Template&lt;/title&gt;
+	&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;meta name="HandheldFriendly" content="true"&gt;
+	&lt;meta name="author" content="bslthemes" /&gt;
+
+	&lt;!-- grid css --&gt;
+	&lt;link rel="stylesheet" href="css/plugins/bootstrap-grid.css"&gt;
+	&lt;!-- font awesome css --&gt;
+	&lt;link rel="stylesheet" href="css/plugins/fontawesome.min.css"&gt;
+	&lt;!-- swiper css --&gt;
+	&lt;link rel="stylesheet" href="css/plugins/swiper.min.css"&gt;
+	&lt;!-- spoli css --&gt;
+	&lt;link rel="stylesheet" href="css/style.css"&gt;
+
+	&lt;!-- Favicon --&gt;
+	&lt;link rel="shortcut icon" href="favicon.ico" type="image/x-icon"&gt;
+	&lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+	&lt;!-- wrapper --&gt;
+	&lt;div class="mil-page-wrapper"&gt;
+
+		&lt;!-- top panel --&gt;
+		&lt;div class="mil-top-panel mil-no-anim"&gt;
+			...
+		&lt;/div&gt;
+		&lt;div class="mil-side-menu"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- top panel end --&gt;
+
+		&lt;!-- hero --&gt;
+		&lt;div class="mil-hero-2 mil-b-m-1-soft" id="home" style="background-image: url(img/banner-2/2.png); background-size: 95%; background-position: center top; background-repeat: no-repeat"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- hero end --&gt;
+
+		&lt;!-- about --&gt;
+		&lt;div class="mil-p-100-100" id="about"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- about end --&gt;
+
+		&lt;!-- timeline --&gt;
+		&lt;div class=""&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- timeline end --&gt;
+
+		&lt;!-- skills --&gt;
+		&lt;div class="mil-p-0-100"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- skills end --&gt;
+
+		&lt;!-- services --&gt;
+		&lt;div class="mil-b-m-1 mil-p-100-100" id="service"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- services end --&gt;
+
+		&lt;!-- portfolio --&gt;
+		&lt;div class="mil-p-100-0" id="works"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- portfolio end --&gt;
+
+		&lt;!-- subscribe --&gt;
+		&lt;div class="mil-p-200-0 mil-sm-p-100-0"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- subscribe end --&gt;
+
+		&lt;!-- price --&gt;
+		&lt;div class="mil-p-200-40 mil-sm-p-100-40"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- price end --&gt;
+
+		&lt;!-- reviews --&gt;
+		&lt;div class="mil-p-0-40" style="background-image: url(img/shapes/2.png); background-size: 100%; background-repeat: no-repeat;"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- reviews end --&gt;
+
+		&lt;!-- blog end --&gt;
+		&lt;div class="mil-p-100-100" id="blog"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- blog end --&gt;
+
+		&lt;!-- brands end --&gt;
+		&lt;div class="mil-p-0-100"&gt;
+			...
+		&lt;/div&gt;
+		&lt;!-- brands end --&gt;
+
+		&lt;!-- footer --&gt;
+		&lt;footer class="mil-b-m-1"&gt;
+			...
+		&lt;/footer&gt;
+		&lt;!-- footer end --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- wrapper end --&gt;
+
+	&lt;!-- jquery js --&gt;
+	&lt;script src="js/plugins/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;!-- gsap js --&gt;
+	&lt;script src="js/plugins/gsap.min.js"&gt;&lt;/script&gt;
+	&lt;!-- scroll trigger js --&gt;
+	&lt;script src="js/plugins/ScrollTrigger.min.js"&gt;&lt;/script&gt;
+	&lt;!-- scroll to js --&gt;
+	&lt;script src="js/plugins/ScrollTo.min.js"&gt;&lt;/script&gt;
+	&lt;!-- swiper js --&gt;
+	&lt;script src="js/plugins/swiper.min.js"&gt;&lt;/script&gt;
+	&lt;!-- spoli js --&gt;
+	&lt;script src="js/main.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+						
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_header" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Header"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- top panel --&gt;
+&lt;div class="mil-top-panel mil-no-anim"&gt;
+	&lt;div class="mil-logo"&gt;
+		&lt;a href="index.html"&gt;&lt;img src="img/logo/l-1.png" alt="Spoli"&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="mil-tp-center mil-light"&gt;
+			&lt;nav class="mil-main-menu mil-onepage-menu"&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href="#about"&gt;About.&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="#works"&gt;Works.&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="#contacts"&gt;Contacts.&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/nav&gt;
+			&lt;div class="mil-tp-social"&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href="https://dribbble.com" target="blank"&gt;&lt;i class="fab fa-dribbble"&gt;&lt;/i&gt;Dribbble&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href="https://behance.com" target="blank"&gt;&lt;i class="fab fa-behance"&gt;&lt;/i&gt;Behance&lt;/a&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="mil-menu-btn-frame"&gt;
+		&lt;div class="mil-menu-btn"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="mil-side-menu"&gt;
+	&lt;div class="mil-side-content"&gt;
+		&lt;div&gt;&lt;/div&gt;
+		&lt;div class="mil-side-pages-menu mil-onepage-side-menu"&gt;
+			&lt;ul&gt;
+				&lt;li class="mil-has-children mil-current"&gt;
+					&lt;a href="#home"&gt;Home&lt;/a&gt;
+					&lt;ul&gt;
+						&lt;li class="mil-current"&gt;
+							&lt;a href="index.html"&gt;Home type 1&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="home-2.html"&gt;Home type 2&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="home-3.html"&gt;Home type 3&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;a href="home-4.html"&gt;Home type 4&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href="#about"&gt;About&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href="#service"&gt;Services&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href="#works"&gt;Portfolio&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href="#blog"&gt;Blog&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href="#contacts"&gt;Contacts&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;div class="mil-side-menu-footer"&gt;
+			&lt;span class="mil-fs-16 mil-c-m-1"&gt;Copyright &lt;a href="#." class="mil-c-grad"&gt;Spoli&lt;/a&gt; 2024. All rights reserved.&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- top panel end --&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="html_structure_footer" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Footer"</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!-- footer --&gt;
+&lt;footer class="mil-b-m-1"&gt;
+	&lt;form&gt;
+		&lt;div class="container mil-relative mil-p-100-100 mil-sm-p-100-100" id="contacts"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="col-md-10"&gt;
+					&lt;div class="mil-aic mil-mb-20 mil-up"&gt;
+						&lt;img src="img/logo/xs.png" alt="logo" class="mil-w-12"&gt;
+						&lt;span class="mil-fs-16 mil-ml-10"&gt;Get In Touch&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;h2 class="mil-ff-1 mil-fs-52 mil-c-grad mil-mb-20 mil-up"&gt;Give Me A Job!&lt;/h2&gt;
+					&lt;p class="mil-lh-150 mil-mb-60 mil-up"&gt;I have a fondness for clean designs, subtle interactions and delightful user &lt;br&gt;experiences. If you are interested you can check.&lt;/p&gt;
+					&lt;div class="mil-mb-10"&gt;
+						&lt;div class="row"&gt;
+							&lt;div class="col-lg-6 mil-mb-30 mil-up"&gt;
+								&lt;label class="mil-fs-16 mil-fw-700 mil-ff-1 mil-c-m-3"&gt;Your Name&lt;/label&gt;
+								&lt;input type="text" placeholder="Enter your name"&gt;
+							&lt;/div&gt;
+							&lt;div class="col-lg-6 mil-mb-30 mil-up"&gt;
+								&lt;label class="mil-fs-16 mil-fw-700 mil-ff-1 mil-c-m-3"&gt;Your Mail&lt;/label&gt;
+								&lt;input type="text" placeholder="infoflex@info.com"&gt;
+							&lt;/div&gt;
+							&lt;div class="col-lg-12 mil-up"&gt;
+								&lt;label class="mil-fs-16 mil-fw-700 mil-ff-1 mil-c-m-3"&gt;Message&lt;/label&gt;
+								&lt;textarea placeholder="Write your message"&gt;&lt;/textarea&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;p class="mil-mb-100 mil-md-mb-60 mil-fs-14 mil-up"&gt;&lt;span class="mil-c-grad"&gt;*&lt;/span&gt; Call us 24/7 or fill out the form below to receive a free.&lt;/p&gt;
+					&lt;div class="mil-footer-submit mil-up"&gt;
+						&lt;svg width="449" height="407" viewBox="0 0 449 407" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
+							&lt;path d="M267 47.5C261.5 42.5 258.5 38.5 234.119 24.9984C209.971 11.6257 216.413 45.0072 223.08 62.5457L316.929 247.265C326.894 268.177 335.961 302.107 292.509 270.534L150.943 137.072C132.838 123.917 107.103 118.562 149.003 202.389L197.776 313.017C210.026 340.037 225.618 390.209 189.989 374.735L86.5285 307.045C72.8835 298.649 51.4793 302.409 75.022 384.614" stroke="url(#paint0_linear_1032_3989)" stroke-width="2" /&gt;
+							&lt;rect x="255.5" y="0.5" width="185" height="185" rx="92.5" stroke="url(#paint1_linear_1032_3989)" /&gt;
+							&lt;rect x="263.5" y="0.5" width="185" height="185" rx="92.5" stroke="url(#paint2_linear_1032_3989)" /&gt;
+							&lt;defs&gt;
+								&lt;linearGradient id="paint0_linear_1032_3989" x1="303.091" y1="178.428" x2="40.3741" y2="240.904" gradientUnits="userSpaceOnUse"&gt;
+									&lt;stop stop-color="#FFE588" offset="1" /&gt;
+									&lt;stop offset="1" stop-color="#FF8473" /&gt;
+								&lt;/linearGradient&gt;
+								&lt;linearGradient id="paint1_linear_1032_3989" x1="348" y1="0" x2="348" y2="186" gradientUnits="userSpaceOnUse"&gt;
+									&lt;stop stop-color="#FFE588" offset="1" /&gt;
+									&lt;stop offset="1" stop-color="#FF8473" /&gt;
+								&lt;/linearGradient&gt;
+								&lt;linearGradient id="paint2_linear_1032_3989" x1="356" y1="0" x2="356" y2="186" gradientUnits="userSpaceOnUse"&gt;
+									&lt;stop stop-color="#FFE588" offset="1" /&gt;
+									&lt;stop offset="1" stop-color="#FF8473" /&gt;
+								&lt;/linearGradient&gt;
+							&lt;/defs&gt;
+						&lt;/svg&gt;
+						&lt;button type="submit" class="mil-ff-1 mil-fs-18 mil-tal mil-fw-700 mil-c-m-3"&gt;Submit Now&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: -7%; top: 40%" class="mil-blue-star mil-up"&gt;
+				&lt;path d="M4.34263 32.6269L32.6269 4.34264L35.6574 7.37309L7.37309 35.6574L4.34263 32.6269Z" fill="#7152E1" /&gt;
+				&lt;path d="M17.6923 40V0H22.3077V40H17.6923Z" fill="#7152E1" /&gt;
+				&lt;path d="M32.6269 35.6573L4.34264 7.37308L7.37309 4.34262L35.6574 32.6269L32.6269 35.6573Z" fill="#7152E1" /&gt;
+				&lt;path d="M0 17.6923H40V22.3077H0V17.6923Z" fill="#7152E1" /&gt;
+			&lt;/svg&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+	&lt;div class="mil-b-m-1-light mil-p-30-30"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="row mil-jcb mil-aic"&gt;
+				&lt;div class="col col-md-4 mil-sm-hidden"&gt;
+					&lt;div class="mil-aic"&gt;
+						&lt;img src="img/logo/xs.png" alt="logo" class="mil-w-12"&gt;
+						&lt;span class="mil-fs-16 mil-ml-10"&gt;Help.info@gmail.com&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="col col-md-4 mil-jcc mil-sm-hidden"&gt;&lt;/div&gt;
+				&lt;div class="col col-md-4 mil-jce mil-sm-jcc"&gt;
+					&lt;div class="mil-aic"&gt;
+						&lt;img src="img/logo/xs.png" alt="logo" class="mil-w-12"&gt;
+						&lt;span class="mil-fs-16 mil-ml-10"&gt;Copyright &lt;a href="#." class="mil-c-grad"&gt;Spoli&lt;/a&gt; 2024. All rights reserved.&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/footer&gt;
+&lt;!-- footer end --&gt;
+					</code>
+				</pre>
+			</article>
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h2>
+				<p>
+					In this template are defined some of classes for icons, your can see all icons here - <a href="https://fontawesome.com/v5/search">https://fontawesome.com/v5/search</a>
+				</p>
+			</article>
+			<article id="credits" class="dt-section">
+				<h2 class="dt-title">Source & Credits</h2>
+				<h3>Scripts</h3>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">jQuery</span> <a target="_blank" href="https://jquery.com/">https://jquery.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">imagesLoaded</span> <a target="_blank" href="http://imagesloaded.desandro.com/">http://imagesloaded.desandro.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Swiper</span> <a target="_blank" href="https://swiperjs.com/">https://swiperjs.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">Bootstrap</span> <a target="_blank" href="https://getbootstrap.com/">https://getbootstrap.com/</a>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">GSAP</span> <a target="_blank" href="https://greensock.com">https://greensock.com</a>
+					</li>
+				</ul>
+				<h3>Images</h3>
+				<p>Any Images or logos used in previews are not included in this item or final purchase.</p>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">Freepik, 
+							Pexels, 
+							Unsplash</span>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script>
+</body>
+</html>
